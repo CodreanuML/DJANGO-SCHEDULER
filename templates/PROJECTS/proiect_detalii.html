@@ -1,0 +1,94 @@
+{% extends 'PROJECTS/template.html' %}
+
+{% block content %}
+
+
+
+
+
+
+
+
+
+<div class="container_detalii">
+
+
+
+<div class="container_left_detalii">
+
+	<div class="nume">Proiect: {{proiect.nume}}</div>
+	<hr/>
+	<div class="ID">Proiect: {{proiect.id_proiect}}</div>
+	<hr/>
+	<div class="descriere">{{proiect.descriere}}</div>
+	<hr/>
+
+</div>
+
+
+
+
+<div class="container_right_detalii">
+
+
+
+
+		<div class="row_title_detalii">
+			SARCINI DE EFECTUAT
+		</div> 
+
+
+		<div class="row_detalii">
+			<div class="column_id_ev">ID</div>
+			<div class="column_nume_ev">NUME</div>
+			<div class="column_recurenta_zile_ev">RECURENTA </div>
+			<div class="column_status_ev">STATUS</div>
+			<div class="column_evenimente_ev"></div>
+		</div>
+
+		<hr/>
+
+		{% for eveniment in eveniment_template %}
+
+		<div class="row_detalii">
+			<div class="column_id_ev">{{eveniment.id}} </div>
+			<div class="column_nume_ev">{{eveniment.nume}}</div>
+			<div class="column_recurenta_zile_ev">{{eveniment.recurenenta_zile}} Zile </div>
+
+			{% if eveniment.status == True %}
+			<div class="column_status_ev">Activ</div>
+			{% else %}
+			<div class="column_status_ev">Inactiv</div>
+			{% endif %}
+			<div class="column_evenimente_ev"><a href="{% url 'PROJECTS:project_details' proiect.pk %}">DETALII</a></div>
+		</div> 
+		<hr/>
+
+		{% endfor %}
+
+
+		
+
+
+
+		<div class="row_footer_detalii">
+			<a href="{% url 'EVENTS:eveniment_template_nou' proiect.pk  %}">Adauga O Sarcina </a>
+		</div> 
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+{% endblock %}

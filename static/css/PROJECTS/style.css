@@ -1,0 +1,387 @@
+
+/* GENERAL SETTINGS */
+
+
+body{
+	background-color: #F0FFFF;
+}
+
+
+
+
+
+
+
+
+
+/* NORMAL DISPLAYS  COMPUTER*/ 
+
+
+@media screen and (min-width: 800px) {
+
+
+
+/* NAVBAR SETTINGS */
+
+.navbar{
+	height: 50px;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	margin-left: 0.1vw;
+	margin-right: 0.1vw;
+	
+}
+
+.navbar a{
+	color :white;
+	text-decoration: none;
+}
+
+.navbutton {
+	padding-left:0.5vw;
+	font-size: 20px;
+}
+
+
+
+/* MAIN ITEMS */
+/* HOME PAGE */
+.container_home{
+	display: flex;
+	flex-direction: row;
+	font-size: 16px;
+
+}
+
+
+.container_left{
+	
+	margin-left: 0.1vw;
+	height: 100vh;
+	width: 350px;
+	background-color: grey;
+	display: flex;
+	flex-direction: column;
+	
+
+
+}
+
+
+.container_left .card_title{
+	margin-bottom: 20px;
+	height: 80px ;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	
+
+}
+
+
+
+.container_right{
+	width: 100%;
+	margin-top: 10px;
+	padding-left: 10px;
+
+}
+
+.row_title{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+
+
+
+.row{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.row_footer{
+	width: 100%;
+}
+
+.column_id{
+	width:10%;
+}
+
+.column_nume{
+	width:20%;
+}
+
+.column_proiect_id{
+	width:10%;
+}
+
+.column_descriere{
+	width:40%;
+}
+
+
+.column_evenimente{
+	width:10%;
+}
+
+
+.row_footer{
+	margin-bottom:80px;
+	width: 100%;
+}
+
+
+
+
+
+
+/* DETALII PROJECT PAGE */
+
+.container_detalii{
+	display: flex;
+	flex-direction: row;
+	font-size: 16px;
+
+}
+
+
+.container_left_detalii{
+	
+	margin-left: 0.1vw;
+	height: 100vh;
+	width: 350px;
+	background-color: grey;
+	display: flex;
+	flex-direction: column;
+	
+
+
+}
+
+
+.container_left_detalii hr{
+	
+
+	width: 90%;
+
+	
+
+
+}
+
+
+.container_left_detalii .nume{
+	
+	height: 30px ;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5px;
+	
+
+}
+
+
+.container_left_detalii .ID{
+	
+	height: 30px ;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 5px;
+	
+
+}
+
+.container_left_detalii .descriere{
+	margin-bottom: 5px;
+	height: 30px ;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 5px;
+	
+
+}
+
+
+
+.container_right_detalii{
+	width: 100%;
+	margin-top: 10px;
+	padding-left: 10px; 
+
+
+}
+
+
+
+.row_title_detalii{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+
+
+
+.row_detalii{
+	width: 100%;
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+
+}
+
+.row_footer_detalii{
+	width: 100%;
+}
+
+.column_id_ev{
+	width:20%;
+}
+
+.column_nume_ev{
+	width:20%;
+}
+
+.column_recurenta_zile_ev{
+	width:20%;
+}
+
+.column_status_ev{
+	width:20%;
+}
+
+
+.column_evenimente_ev{
+	width:20%;
+}
+
+
+.row_footer_detalii{
+	margin-bottom:80px;
+	width: 100%;
+}
+
+
+
+
+
+
+/* PROIECT NOU  */
+
+
+
+
+
+
+
+.container_proiect_nou{
+	display: flex;
+	flex-direction: row;
+	font-size: 16px;
+
+}
+
+
+.container_left_proiect_nou{
+	
+	margin-left: 0.1vw;
+	height: 100vh;
+	width: 350px;
+	background-color: grey;
+	display: flex;
+	flex-direction: column;
+	
+
+
+
+}
+
+.container_left_proiect_nou .nume{
+	margin-top: 10px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.container_right_proiect_nou{
+	
+	width: 100%;
+	margin-top: 10px;
+	padding-left: 10px; 
+	display: flex;
+	justify-content: center;
+
+
+
+}
+
+
+.proiect_nou_form{
+	margin-top: 20px;
+	width: 100%;
+	margin-top: 10px;
+	padding-left: 10px; 
+	display: flex;
+	justify-content: center;
+
+
+
+}
+
+.form_row{
+	width: 100%;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+
+
+}
+
+.form_col{
+	width: 50%;
+	display: flex;
+	justify-content:left;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+  
+@media screen and (max-width: 600px) {
+	
+
+
+        }
+

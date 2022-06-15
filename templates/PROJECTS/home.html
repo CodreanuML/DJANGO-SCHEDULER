@@ -1,0 +1,66 @@
+{% extends 'PROJECTS/template.html' %}
+
+
+{% block content %}
+
+
+
+
+
+<div class="container_home">
+
+
+	<div class="container_left">
+		<div class="card_title">DE EFECTUAT</div>
+		<div class="card_eveniment"></div>
+
+	</div>
+
+
+	<div class="container_right">
+
+		<div class="row_title">
+			PROIECTE 
+		</div> 
+
+
+		<div class="row">
+			<div class="column_id">ID</div>
+			<div class="column_nume">NUME</div>
+			<div class="column_proiect_id">ID </div>
+			<div class="column_descriere">DESCRIERE</div>
+			<div class="column_evenimente"></div>
+		</div>
+
+		<hr/>
+
+		{% for proiect in proiecte_querry%}
+
+		<div class="row">
+			<div class="column_id">{{proiect.id}} </div>
+			<div class="column_nume">{{proiect.nume}}</div>
+			<div class="column_proiect_id">{{proiect.id_proiect}} </div>
+			<div class="column_descriere">{{proiect.descriere}} </div>
+			<div class="column_evenimente"><a href="{% url 'PROJECTS:project_details' proiect.pk %}">DETALII</a></div>
+		</div> 
+		<hr/>
+
+		{% endfor %}
+
+
+		
+
+
+
+		<div class="row_footer">
+			<a href="{% url 'PROJECTS:new_project'  %}">Adauga Proiect</a>
+		</div> 
+
+
+		
+	
+	</div>
+
+</div>
+{% endblock %}
+

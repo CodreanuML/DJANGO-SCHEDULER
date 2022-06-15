@@ -1,0 +1,99 @@
+{% extends 'EVENTS/template.html' %}
+
+
+{% block content %}
+
+<div class="container_events_page">
+    <div class="nume">Istoric Evenimente </div>
+
+
+</div>
+
+
+{% for eveniment in eveniment_q %}
+
+
+
+<div class="wrapper_istoric_ev">
+
+
+    <div class="container_prezentare_eveniment">
+
+        <div class="row">
+            <div class="col_nume">Eveniment:  </div>
+            <div class="col_nume_val">{{eveniment.eveniment_template}} {{eveniment.pk}} </div>
+
+        </div> 
+        <hr/>
+
+
+        <div class="row">
+            <div class="col_nume">ID : </div>
+            <div class="col_nume_val">{{eveniment.pk}}</div>
+
+        </div> 
+        <hr/>
+
+
+        <div class="row">
+            <div class="col_nume">Responsabil : </div>
+            <div class="col_nume_val">{{eveniment.responsabil}}</div>
+
+        </div> 
+        <hr/>
+        <div class="row">
+            <div class="col_nume">Activitatea Evenimentului: </div>
+            <div class="col_nume_val">{{eveniment.eveniment_template}}</div>
+
+        </div> 
+        <hr/>
+
+        <div class="row">
+            <div class="col_nume">Data_initiere : </div>
+            <div class="col_nume_val">{{eveniment.data_initiere}}</div>
+
+        </div> 
+        <hr/>
+        <div class="row">
+            <div class="col_nume">Data_finalizare : </div>
+            <div class="col_nume_val">{{eveniment.data_finalizare}}</div>
+
+        </div> 
+        <hr/>
+        <div class="row">
+
+            <div class="col_nume">Status: </div>
+            {% if eveniment.status == 0 %}
+            <div class="col_nume_val">Nefinalizat</div>
+            {% else %}
+            <div class="col_nume_val">Finalizat</div>
+            {% endif %}
+        </div> 
+        <hr/>
+
+
+         {% if eveniment.status == 0 %}
+        <div class="row">
+            <div class="col_nume">Finalizeaza:</div>
+       
+
+        <div class="col_nume_val">
+           
+
+                <button class="button_finalizeaza" ><a href="{% url 'EVENTS:finalizeaza_eveniment' eveniment.pk %}" >Finalizeaza</a></button>
+    
+        </div>
+           
+        </div> 
+   
+         {% endif %}
+     
+
+
+
+</div>
+</div>
+{% endfor %}
+
+
+{% endblock %}

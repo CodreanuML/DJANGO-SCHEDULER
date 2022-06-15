@@ -1,0 +1,88 @@
+{% extends 'EVENTS/template.html' %}
+
+
+{% block content %}
+
+
+<div class="container_events_page">
+	<div class="nume">Eveniment: {{eveniment.nume}}</div>
+
+
+</div>
+
+<div class="wrapper_detalii_ev">
+
+	<div class="container_prezentare_eveniment">
+
+
+
+
+		<div class="row">
+			<div class="col_nume">Nume : </div>
+			<div class="col_nume_val">{{eveniment.nume}}</div>
+
+		</div> 
+		<hr/>
+
+
+		<div class="row">
+			<div class="col_nume">Proiect : </div>
+			<div class="col_nume_val">{{eveniment.proiect}}</div>
+
+		</div> 
+		<hr/>
+		<div class="row">
+			<div class="col_nume">Activitati : </div>
+			<div class="col_nume_val">{{eveniment.activitati_necesare}}</div>
+
+		</div> 
+		<hr/>
+
+		<div class="row">
+			<div class="col_nume">Recurenta : </div>
+			<div class="col_nume_val">{{eveniment.recurenenta}}</div>
+
+		</div> 
+		<hr/>
+		<div class="row">
+			<div class="col_nume">Recurenta Zile : </div>
+			<div class="col_nume_val">{{eveniment.recurenenta_zile}}</div>
+
+		</div> 
+		<hr/>
+		<div class="row">
+			<div class="col_nume">Termen Executie : </div>
+			<div class="col_nume_val">{{eveniment.zile_executie}}</div>
+
+		</div> 
+		<hr/>
+
+		<div class="row">
+			<div class="col_nume">Data Initiere: </div>
+			<div class="col_nume_val">{{eveniment.data_initiere}}</div>
+
+		</div> 
+		<hr/>
+
+		<div class="row">
+			<div class="col_nume">Status: </div>
+			<div class="col_nume_val">{{eveniment.status}}</div>
+
+		</div> 		
+		<hr/>
+
+
+</div>
+
+</div>
+	<div class="container_home_bottom">
+
+
+	<button class="button_adauga_eveniment_template" ><a href="{% url 'EVENTS:istoric_evenimente' eveniment.pk %}" >Istoric</a></button>
+	
+	</div>
+
+{% endblock %}
+
+
+
