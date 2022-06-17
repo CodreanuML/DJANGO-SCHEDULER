@@ -3,13 +3,10 @@ from .models import Eveniment_Template ,Eveniment
 from PROJECTS.models import Proiect
 from  .forms import Eveniment_Template_form
 import datetime
+from django.core.paginator import Paginator
 # Create your views here.
 
 
-def home(request,proiect_pk) :
-	proiect_querry=Proiect.objects.get(pk=proiect_pk)
-	eveniment_template_querry=Eveniment_Template.objects.filter(proiect=proiect_querry)
-	return render(request,'EVENTS/home.html',{'proiect':proiect_querry,'eveniment_template':eveniment_template_querry})
 
 
 
@@ -61,18 +58,20 @@ def eveniment_template_nou(request,proiect_pk):
 def detalii_eveniment_template(request,eveniment_pk):
 	eveniment_querry=Eveniment_Template.objects.get(pk=eveniment_pk)
 
+	eveniment_querry_instances_req=Eveniment.objects.filter(eveniment_template=eveniment_querry)
 
 
-	return render(request,'EVENTS/datalii_eveniment_template.html',{'eveniment':eveniment_querry})
+	paginator = Paginator(eveniment_querry_instances_req, 3) # Show 25 contacts per page.
+
+	page_number = request.GET.get('page')
+	eveniment_querry_instances = paginator.get_page(page_number)
 
 
 
-def istoric_evenimente(request,eveniment_pk):
-	eveniment_template_querry=Eveniment_Template.objects.get(pk=eveniment_pk)
-	eveniment_querry=Eveniment.objects.filter(eveniment_template=eveniment_template_querry)
+
+	return render(request,'EVENTS/datalii_eveniment_template.html',{'eveniment':eveniment_querry,'evenimente_instance':eveniment_querry_instances})
 
 
-	return render(request ,'EVENTS/istoric_evenimente.html',{'eveniment_q':eveniment_querry})
 
 
 

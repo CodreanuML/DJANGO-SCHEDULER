@@ -57,10 +57,31 @@
 		</div> 
 
 
-		
+<div class="pagination">
+    <span class="step-links">
+        {% if proiecte_querry.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ proiecte_querry.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ proiecte_querry.number }} of {{ proiecte_querry.paginator.num_pages }}.
+        </span>
+
+        {% if proiecte_querry.has_next %}
+            <a href="?page={{ proiecte_querry.next_page_number }}">next</a>
+            <a href="?page={{ proiecte_querry.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>		
 	
 	</div>
 
+
+
+
 </div>
+
+
 {% endblock %}
 

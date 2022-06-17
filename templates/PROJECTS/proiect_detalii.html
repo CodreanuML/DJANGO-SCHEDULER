@@ -60,7 +60,7 @@
 			{% else %}
 			<div class="column_status_ev">Inactiv</div>
 			{% endif %}
-			<div class="column_evenimente_ev"><a href="{% url 'PROJECTS:project_details' proiect.pk %}">DETALII</a></div>
+			<div class="column_evenimente_ev"><a href="{% url 'EVENTS:detalii_eveniment_template' eveniment.pk %}">DETALII</a></div>
 		</div> 
 		<hr/>
 
@@ -78,7 +78,23 @@
 
 
 
+<div class="pagination">
+    <span class="step-links">
+        {% if eveniment_template.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ eveniment_template.previous_page_number }}">previous</a>
+        {% endif %}
 
+        <span class="current">
+            Page {{ eveniment_template.number }} of {{ eveniment_template.paginator.num_pages }}.
+        </span>
+
+        {% if eveniment_template.has_next %}
+            <a href="?page={{ eveniment_template.next_page_number }}">next</a>
+            <a href="?page={{ eveniment_template.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>		
 
 
 
@@ -90,5 +106,8 @@
 
 </div>
 
+
+
+	
 
 {% endblock %}
