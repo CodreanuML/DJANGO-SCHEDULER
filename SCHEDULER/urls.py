@@ -22,6 +22,7 @@ urlpatterns = [
         
         path('events/', include("EVENTS.urls")),
         path('projects/', include("PROJECTS.urls")),
+        path('account/',include("ACCOUNTS.urls")),
 
 ]
 

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django_crontab',
     'EVENTS',
     'PROJECTS',
+    'ACCOUNTS',
 ]
 
 MIDDLEWARE = [
@@ -144,3 +145,7 @@ LOGOUT_REDIRECT_URL = 'user_login'
 CRONJOBS = [
     ('*/1 * * * *', 'EVENTS.cron.my_scheduled_job')
 ]
+
+
+LOGOUT_REDIRECT_URL='TWEET:home'
+LOGIN_REDIRECT_URL='TWEET:home'
