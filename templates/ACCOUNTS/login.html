@@ -1,0 +1,70 @@
+{% extends 'ACCOUNTS/template.html' %}
+
+
+{% block content %}
+
+
+
+
+
+<div class="container_login">
+
+
+	<div class="container_left">
+		<div class="card_title">ESTE NECESARA AUTENTIFICAREA!</div>
+		<div class="card_eveniment"></div>
+
+	</div>
+
+
+	<div class="container_right">
+
+		<div class="row_title">
+			AUTENTIFICARE
+		</div> 
+
+
+		  <div class="login_form">
+
+
+  				<form method="post" name="login">
+                {% csrf_token %}
+
+                {% for field in form %}
+                	<div class="form_row">
+
+                    <div class="form_col">
+                    {{ field.label}}
+                    </div>
+                        
+                	<div class="form_col">
+                	{{ field}}
+                	</div>
+                   
+                	</div> 
+                     <hr/>
+                {% endfor %}
+                <div class="form_row">
+                 <button type="submit" class="btn_form">Logare</button>
+                </div>
+                </form>
+           </div>	
+
+
+
+        <div class="row_footer">
+
+			<a href="https://www.w3schools.com/" > Inregistreaza Count Nou!</a>
+		</div> 
+
+	
+	</div>
+
+
+
+
+</div>
+
+
+{% endblock %}
+

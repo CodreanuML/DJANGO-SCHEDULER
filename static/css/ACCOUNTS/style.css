@@ -1,0 +1,277 @@
+/* GENERAL SETTINGS */
+
+
+body{
+	background-color: #F0FFFF;
+}
+
+
+
+
+
+
+
+
+
+/* NORMAL DISPLAYS  COMPUTER*/ 
+
+
+@media screen and (min-width: 800px) {
+
+
+
+/* NAVBAR SETTINGS */
+
+.navbar{
+	height: 50px;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	margin-left: 0.1vw;
+	margin-right: 0.1vw;
+	
+}
+
+.navbar a{
+	color :white;
+	text-decoration: none;
+}
+
+.navbutton {
+	padding-left:0.5vw;
+	font-size: 20px;
+}
+
+
+
+/* MAIN ITEMS */
+/* LOGIN PAGE */
+.container_login{
+	display: flex;
+	flex-direction: row;
+	font-size: 16px;
+
+}
+
+
+.container_login .container_left{
+	
+	margin-left: 0.1vw;
+	height: 100vh;
+	width: 450px;
+	background-color: grey;
+	display: flex;
+	flex-direction: column;
+	
+
+
+}
+
+
+.container_login .container_left .card_title{
+	margin-bottom: 20px;
+	height: 80px ;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	align-items: center;
+	
+
+}
+
+
+
+.container_login  .container_right{
+	width: 100%;
+	margin-top: 10px;
+	padding-left: 10px;
+
+}
+
+.container_login  .container_right .row_title{
+	width: 100%;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+
+
+
+.login_form{
+	margin-top: 20px;
+	width: 100%;
+	margin-top: 10px;
+	padding-left: 10px; 
+	display: flex;
+	justify-content: center;
+
+
+
+}
+
+.form_row{
+	width: 100%;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+
+
+}
+
+.form_col{
+	width: 50%;
+	display: flex;
+	justify-content:left;
+	align-items: center;
+}
+
+.row_footer{
+	margin-top: 30px;
+		display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container_right hr{
+	
+
+	width: 100%;
+
+	
+
+
+}
+
+
+.login_form input{
+	
+
+	width: 100%;
+
+	
+
+
+}
+
+
+
+
+
+
+
+
+/* MAIN ITEMS */
+/* REGISTER PAGE */
+.container_register{
+	display: flex;
+	flex-direction: row;
+	font-size: 16px;
+
+}
+
+
+.container_register .container_left{
+	
+	margin-left: 0.1vw;
+	height: 100vh;
+	width: 450px;
+	background-color: grey;
+	display: flex;
+	flex-direction: column;
+	
+
+
+}
+
+
+.container_register .container_left .card_title{
+	margin-bottom: 20px;
+	height: 80px ;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	align-items: center;
+	
+
+}
+
+
+
+.container_register  .container_right{
+	width: 100%;
+	margin-top: 10px;
+	padding-left: 10px;
+
+}
+
+.container_register  .container_right .row_title{
+	width: 100%;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+
+
+
+.login_form{
+	margin-top: 20px;
+	width: 100%;
+	margin-top: 10px;
+	padding-left: 10px; 
+	display: flex;
+	justify-content: center;
+
+
+
+}
+
+.form_row{
+	width: 100%;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+
+
+}
+
+.form_col{
+	width: 50%;
+	display: flex;
+	justify-content:left;
+	align-items: center;
+}
+
+.row_footer{
+	margin-top: 30px;
+		display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+  
+@media screen and (max-width: 600px) {
+	
+
+
+        }

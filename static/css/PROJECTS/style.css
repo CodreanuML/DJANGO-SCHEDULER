@@ -55,7 +55,7 @@ body{
 }
 
 
-.container_left{
+.container_left_home{
 	
 	margin-left: 0.1vw;
 	height: 100vh;
@@ -69,13 +69,37 @@ body{
 }
 
 
-.container_left .card_title{
-	margin-bottom: 20px;
-	height: 80px ;
+.container_left_home hr{
+	
+
+	width: 90%;
+
+	
+
+
+}
+
+
+.container_left_home .nume{
+	
+	height: 30px ;
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	margin-top: 20px;
+	align-items: center;
+	margin-top: 5px;
+	
+
+}
+
+
+.container_left_home .zona{
+	
+	height: 30px ;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 5px;
 	
 
 }

@@ -7,11 +7,6 @@ from .models import Employee
 
 
 
-class LoginForm(AuthenticationForm):
-    
-      class Meta:
-            model = User
-            fields = ('username','password')
 
 
 
@@ -23,8 +18,7 @@ class RegistrationForm(UserCreationForm):
     DEP_CHOICES = [
         ('Productie', 'Productie'),
         ('Mentenanta', 'Mentenanta'),
-        ('Admin' , 'Admin'),
-
+       
     ]
 
 
@@ -57,7 +51,9 @@ class RegistrationForm(UserCreationForm):
 
         )
         labels = {
- 
+        'username': ('Utilizator'),
+        'password1': ('Parola'),
+        'password2': ('Repeta Parola'),
         'department': ('Selectati departamentu'),
         'Zona': ('Selectati aria'),
         }

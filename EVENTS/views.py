@@ -5,11 +5,11 @@ from  .forms import Eveniment_Template_form
 import datetime
 from django.core.paginator import Paginator
 # Create your views here.
+from django.contrib.auth.decorators import login_required
 
 
 
-
-
+@login_required
 def eveniment_template_nou(request,proiect_pk):
 	proiect_querry=Proiect.objects.get(pk=proiect_pk)	
 
@@ -54,7 +54,7 @@ def eveniment_template_nou(request,proiect_pk):
 	return render(request,'EVENTS/eveniment_template_nou.html',{'form':form})
 
 
-
+@login_required
 def detalii_eveniment_template(request,eveniment_pk):
 	eveniment_querry=Eveniment_Template.objects.get(pk=eveniment_pk)
 
@@ -74,7 +74,7 @@ def detalii_eveniment_template(request,eveniment_pk):
 
 
 
-
+@login_required
 def finalizeaza_eveniment(request,eveniment_pk):
 	eveniment_querry=Eveniment.objects.get(pk=eveniment_pk)
 

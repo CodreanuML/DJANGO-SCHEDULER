@@ -3,10 +3,17 @@ from .models import Proiect
 from EVENTS.models import Eveniment_Template
 from .forms import Proiect_ADD
 from django.core.paginator import Paginator
+from django.contrib.auth.models import User
+from ACCOUNTS.models import Employee
 # Create your views here.
+from django.contrib.auth.decorators import login_required
 
 
+@login_required
 def home(request):
+
+	user_req = request.user
+	employee_req=Employee.objects.get(user=user_req)
 	proiecte_querry_req=Proiect.objects.all()
 
 
@@ -17,10 +24,10 @@ def home(request):
    
 
 
-	return render(request,'PROJECTS/home.html',{'proiecte_querry':proiecte_querry})
+	return render(request,'PROJECTS/home.html',{'proiecte_querry':proiecte_querry,'employee':employee_req})
 
 
-
+@login_required
 def new_project(request):
 	if request.method=="POST":
 		form=Proiect_ADD(request.POST)
@@ -32,7 +39,7 @@ def new_project(request):
 	return render(request,'PROJECTS/proiectnou.html',{'form':form})
 
 
-
+@login_required
 def project_details(request,pk):
 	proiect_querry=Proiect.objects.get(pk=pk)
 	eveniment_template_querry_req=Eveniment_Template.objects.filter(proiect=proiect_querry)
