@@ -142,8 +142,11 @@ LOGIN_URL='ACCOUNTS:login'
 
 
 
+
+
 CRONJOBS = [
-    ('*/1 * * * *', 'EVENTS.cron.my_scheduled_job')
+    ('*/1 * * * *', 'EVENTS.cron.scan_events_to_close_status'),
+    ('*/1 * * * *', 'EVENTS.cron.scan_template_generate_events')
 ]
 
 

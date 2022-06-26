@@ -7,8 +7,8 @@ from django.contrib.auth.models import User
 class Eveniment_Template(models.Model):
 	nume = models.CharField(max_length=100)
 	
-	proiect=models.ForeignKey(Proiect,related_name='evenimente',on_delete=models.CASCADE)
-
+	proiect=models.ForeignKey(Proiect,related_name='evenimente',on_delete=models.CASCADE,null=True, blank=True)
+	responsabil=models.ForeignKey(User,related_name='eveniment_temp',on_delete=models.CASCADE)
 	activitati_necesare=models.TextField(max_length=300)
  
 	CHOICES=[('saptamanal', 'saptamanal') , ('lunar','lunar') , ('anual','anual') , ('2ani','2ani') ]
@@ -48,5 +48,9 @@ class Eveniment(models.Model):
 	status=models.BooleanField() # 1 deschis si nefinalizat 2 deschis si finalizat 
 
 	
+	def __str__(self):
+		return str(self.eveniment_template.nume +" " +str(self.pk))
+
+
 	class Meta :
 		ordering=['data_finalizare']
