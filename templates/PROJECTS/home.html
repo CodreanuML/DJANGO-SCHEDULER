@@ -37,7 +37,7 @@
 			<div class="column_evenimente"></div>
 		</div>
 
-		<hr/>
+	
 
 		{% for proiect in proiecte_querry%}
 
@@ -46,9 +46,9 @@
 			<div class="column_nume">{{proiect.nume}}</div>
 			<div class="column_proiect_id">{{proiect.id_proiect}} </div>
 			<div class="column_descriere">{{proiect.descriere}} </div>
-			<div class="column_evenimente"><a href="{% url 'PROJECTS:project_details' proiect.pk %}">DETALII</a></div>
+			<div class="column_evenimente"><a href="{% url 'PROJECTS:project_details' proiect.pk %}">Lista Evenimente </a></div>
 		</div> 
-		<hr/>
+		
 
 		{% endfor %}
 

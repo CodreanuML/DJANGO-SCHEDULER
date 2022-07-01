@@ -5,39 +5,66 @@
 <div class="container_proiect_nou">
 
 
+
+
 <div class="container_left_proiect_nou">
     <div class="nume">ADAUGA PROIECT NOU</div>
+    <hr/>
 </div>
+
+
+
+
 
 <div class="container_right_proiect_nou">
 
- 	            <div class="proiect_nou_form">
+ 	<div class="proiect_nou_form">
+
+                <div class="title_form">
+                    Inregistrare Proiect
+                </div>      
+
 
 
   				<form method="post" name="new_proiect">
+
                 {% csrf_token %}
 
                 {% for field in form %}
                 	<div class="form_row">
 
-                    <div class="form_col">
-                    {{ field.label}}
-                    </div>
+                        <div class="form_col_label">
+                        {{ field.label}}
+                        </div>
                         
-                	<div class="form_col">
-                	{{ field}}
-                	</div>
+                	   <div class="form_col_value">
+                	   {{ field}}
+                	   </div>
                    
                 	</div> 
-                     <hr/>
+
+                    <hr/>
                 {% endfor %}
+
+
+
                 <div class="form_row">
-                 <button type="submit" class="btn_form">Adauga</button>
+                    <button type="submit" class="btn_form">Adauga</button>
                 </div>
-                </form>
-            	</div>
+
+               </form>
+
+            	
+
+    </div>
+
+
 
 </div>
+
+
+
+
 
 </div>
 

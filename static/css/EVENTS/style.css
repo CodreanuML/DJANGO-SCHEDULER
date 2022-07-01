@@ -2,7 +2,7 @@
 
 
 body{
-	background-color: #F0FFFF;
+	background-color: #F8F8FF;
 }
 
 
@@ -24,7 +24,7 @@ body{
 
 .navbar{
 	height: 50px;
-	background-color: black;
+	background-color: #417690;
 	display: flex;
 	align-items: center;
 	margin-left: 0.1vw;
@@ -141,24 +141,34 @@ body{
 .container_detalii_eveniment{
 	display: flex;
 	flex-direction: row;
-	font-size: 16px;
+	font-size: 14px;
 
 }
 
 
 .container_left_detalii_eveniment{
 	
+	margin-top: 5px;
 	margin-left: 0.1vw;
 	height: 100vh;
-	width: 450px;
-	background-color: grey;
+	width: 550px;
+	background-color: #F0FFFF;
 	display: flex;
 	flex-direction: column;
-	
-
-
+	border-style: solid;
+	border-color: #417690;
+	border-size: 1px;
 
 }
+
+.container_left_detalii_eveniment hr{
+	
+	width: 90%;
+	color : #417690;
+
+}
+
+
 
 
 .container_left_detalii_eveniment .nume{
@@ -182,15 +192,16 @@ body{
 }
 
 .container_left_detalii_eveniment .row .col_nume{
-	width: 50%;
+	width: 35%;
 	display: flex;
 	justify-content:left;
 	align-items: center;
+	padding-left: 5px;
 }
 
 
 .container_left_detalii_eveniment .row .col_nume_val{
-	width: 50%;
+	width: 65%;
 	display: flex;
 	justify-content:left;
 	align-items: center;
@@ -213,50 +224,101 @@ body{
 	width: 100%;
 	margin-top: 10px;
 	padding-left: 10px; 
-	display: flex;
-	flex-direction: column;
-	justify-content:left;
-	align-items: center;
-
-
-}
-
-
-.container_right_detalii_eveniment .container_prezentare_eveniment{
-	width: 80%;
-	border-style: solid;
-	border-size: 2x;
-	border-color: black;
-	border-radius: 25px;
-	margin-top: 10px;
-	padding: 5px;
 
 
 
 }
 
-.container_right_detalii_eveniment .container_prezentare_eveniment .row{
+
+.container_right_detalii_eveniment .row_h{
+
 	width: 100%;
 	display: flex;
+	align-items: center;
+	justify-content: left;
+	color: white;
+	background-color: #417690;
+	border-style: solid;
+	border-color: #417690 ;
+	border-width: 1px;
+	padding-top: 5px;
+
+
+
+}
+
+
+.col_nume{
+	width:16.5%;
+
+}
+.col_Id{
+	width:16.5%;
+
+}
+.col_responsabil{
+	width:16.5%;
+
+}
+
+.col_data_initiere{
+	width:16.5%;
+
+}
+.col_data_finalizare{
+	width:16.5%;
+
+}
+.col_status{
+	width:16.5%;
+
+}
+
+
+
+.container_right_detalii_eveniment .row{
+	
+	width: 100%;
+	display: flex;
+	align-items: center;
 	justify-content: center;
+	background-color: #F0FFFF;
+	border-style: solid;
+	border-color: #417690 ;
+	border-width: 1px;
+	padding-top: 5px;
+}
 
+.col_nume_val{
+	width:16.5%;
 
+}
+.col_Id_val{
+	width:16.5%;
+}
+
+.col_responsabil_val{
+	width:16.5%;
+
+}
+
+.col_data_initiere_val{
+	width:16.5%;
+
+}
+.col_data_finalizare_val{
+	width:16.5%;
+
+}
+.col_status_val{
+	width:16.5%;
 
 }
 
 
-.container_right_detalii_eveniment .container_prezentare_eveniment .col_nume{
-	width: 30%;
 
+	
 
-}
-
-
-.container_right_detalii_eveniment .container_prezentare_eveniment .col_nume_val{
-	width: 70%;
-
-
-}
 
 /* PAGINATOR  */
 .pagination{

@@ -17,7 +17,7 @@ def home(request):
 	proiecte_querry_req=Proiect.objects.all()
 
 
-	paginator = Paginator(proiecte_querry_req, 20) # Show 25 contacts per page.
+	paginator = Paginator(proiecte_querry_req, 25) 
 
 	page_number = request.GET.get('page')
 	proiecte_querry = paginator.get_page(page_number)
@@ -46,7 +46,7 @@ def project_details(request,pk):
 
 
 
-	paginator = Paginator(eveniment_template_querry_req, 20) # Show 25 contacts per page.
+	paginator = Paginator(eveniment_template_querry_req, 20)
 
 	page_number = request.GET.get('page')
 	eveniment_template_querry = paginator.get_page(page_number)

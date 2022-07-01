@@ -50,7 +50,8 @@ body{
 .container_home{
 	display: flex;
 	flex-direction: row;
-	font-size: 16px;
+	font-size: 14px;
+
 
 }
 
@@ -59,7 +60,7 @@ body{
 	margin-top: 5px;
 	margin-left: 0.1vw;
 	height: 100vh;
-	width: 450px;
+	width: 550px;
 	background-color: #F0FFFF;
 	display: flex;
 	flex-direction: column;
@@ -76,7 +77,7 @@ body{
 	
 
 	width: 90%;
-	
+	color : #417690;
 	
 
 
@@ -120,8 +121,13 @@ body{
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	margin-bottom: 20px;
+	justify-content: cleft;
+	color: white;
+	background-color: #417690;
+	border-style: solid;
+	border-color: #417690 ;
+	border-width: 1px;
+	padding-top: 5px;
 }
 
 
@@ -132,6 +138,15 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: #F0FFFF;
+	border-style: solid;
+	border-color: #417690 ;
+	border-width: 1px;
+	padding-top: 5px;
+}
+
+.row a{
+	color : black;
 }
 
 .row_footer{
@@ -161,10 +176,26 @@ body{
 
 
 .row_footer{
-	margin-bottom:80px;
 	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	background-color: #417690 ;
+	border-style: solid;
+	border-color: #417690 ;
+	border-width: 1px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
+.row_footer a{
+	color : white
+}
+
+
+hr{
+	color: #417690;
+}
 
 
 
@@ -175,20 +206,22 @@ body{
 .container_detalii{
 	display: flex;
 	flex-direction: row;
-	font-size: 16px;
+	font-size: 14px;
 
 }
 
 
 .container_left_detalii{
-	
+	margin-top: 5px;
 	margin-left: 0.1vw;
 	height: 100vh;
-	width: 450px;
-	background-color: grey;
+	width: 550px;
+	background-color: #F0FFFF;
 	display: flex;
 	flex-direction: column;
-	
+	border-style: solid;
+	border-color: #417690;
+	border-size: 1px;
 
 
 }
@@ -198,7 +231,7 @@ body{
 	
 
 	width: 90%;
-
+	color: #417690;
 	
 
 
@@ -256,8 +289,13 @@ body{
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	margin-bottom: 20px;
+	justify-content: left;
+	color: white;
+	background-color: #417690;
+	border-style: solid;
+	border-color: #417690 ;
+	border-width: 1px;
+	padding-top: 5px;
 }
 
 
@@ -266,18 +304,36 @@ body{
 .row_detalii{
 	width: 100%;
 	display: flex;
-
 	align-items: center;
 	justify-content: center;
+	background-color: #F0FFFF;
+	border-style: solid;
+	border-color: #417690 ;
+	border-width: 1px;
+	padding-top: 5px;
 
+}
+
+.row_detalii a{
+	color: black;
 }
 
 .row_footer_detalii{
 	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	background-color: #417690 ;
+	border-style: solid;
+	border-color: #417690 ;
+	border-width: 1px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .column_id_ev{
 	width:20%;
+
 }
 
 .column_nume_ev{
@@ -303,6 +359,9 @@ body{
 	width: 100%;
 }
 
+.row_footer_detalii a{
+	color : white
+}
 
 
 
@@ -319,21 +378,35 @@ body{
 .container_proiect_nou{
 	display: flex;
 	flex-direction: row;
-	font-size: 16px;
+	font-size: 14px;
 
 }
 
 
 .container_left_proiect_nou{
 	
+	margin-top: 5px;
 	margin-left: 0.1vw;
 	height: 100vh;
-	width: 450px;
-	background-color: grey;
+	width: 550px;
+	background-color: #F0FFFF;
 	display: flex;
 	flex-direction: column;
+	border-style: solid;
+	border-color: #417690;
+	border-size: 1px;
+
+
+}
+
+
+
+.container_left_proiect_nou hr{
 	
 
+	width: 90%;
+	color: #417690;
+	
 
 
 }
@@ -345,30 +418,50 @@ body{
 	justify-content: center;
 }
 
+
+
+
 .container_right_proiect_nou{
-	
 	width: 100%;
 	margin-top: 10px;
 	padding-left: 10px; 
 	display: flex;
 	justify-content: center;
-
-
-
 }
 
 
 .proiect_nou_form{
 	margin-top: 20px;
-	width: 100%;
+	width: 60%;
+	height: 180px;
 	margin-top: 10px;
-	padding-left: 10px; 
-	display: flex;
-	justify-content: center;
+	
+
+	background-color: #F0FFFF;
+	border: solid;
+	border-color: #417690;
+	border-width: 0.1;
+
+
+
 
 
 
 }
+
+
+.title_form{
+	background-color: #417690;
+	width: 100%;
+	display: flex;
+	justify-content:left;
+	align-items: center;
+	color: white;
+	margin-bottom: 10px;
+}
+
+
+
 
 .form_row{
 	width: 100%;
@@ -377,13 +470,48 @@ body{
 	align-items: center;
 
 
+
 }
 
-.form_col{
+
+.form_col_label{
 	width: 50%;
+	padding-left: 1%;
 	display: flex;
 	justify-content:left;
 	align-items: center;
+	
+}
+
+.form_col_value{
+	width: 50%;
+
+	display: flex;
+	justify-content:left;
+	align-items: center;
+}
+
+
+.form_col_value input{
+	width: 80%;
+	border-color:  #417690;
+
+}
+
+
+.proiect_nou_form hr{
+	width: 98%;
+
+
+
+
+}
+
+.btn_form{
+
+	width: 20%;
+	height: 30px;
+	border-color: #417690;
 }
 
 
@@ -395,9 +523,12 @@ body{
 .pagination{
 	margin-top: 15px;
 
+
 }
 
-
+.pagination a{
+	color: black;
+}
 
 
 
