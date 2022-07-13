@@ -10,21 +10,15 @@
 <div class="container_login">
 
 
-	<div class="container_left">
-		<div class="card_title">ESTE NECESARA AUTENTIFICAREA!</div>
-		<div class="card_eveniment"></div>
-
-	</div>
-
-
-	<div class="container_right">
-
-		<div class="row_title">
-			AUTENTIFICARE
-		</div> 
 
 
 		  <div class="login_form">
+
+
+
+		  		<div class="row_title">
+				AUTENTIFICARE
+				</div> 
 
 
   				<form method="post" name="login">
@@ -33,11 +27,11 @@
                 {% for field in form %}
                 	<div class="form_row">
 
-                    <div class="form_col">
+                    <div class="form_col_label">
                     {{ field.label}}
                     </div>
                         
-                	<div class="form_col">
+                	<div class="form_col_value">
                 	{{ field}}
                 	</div>
                    
@@ -54,11 +48,11 @@
 
         <div class="row_footer">
 
-			<a href="https://www.w3schools.com/" > Inregistreaza Count Nou!</a>
+			<a href="https://www.w3schools.com/" > Inregistreaza Utilizat Nou!</a>
 		</div> 
 
 	
-	</div>
+	
 
 
 

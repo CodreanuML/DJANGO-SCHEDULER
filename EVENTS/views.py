@@ -61,7 +61,7 @@ def detalii_eveniment_template(request,eveniment_pk):
 	eveniment_querry_instances_req=Eveniment.objects.filter(eveniment_template=eveniment_querry)
 
 
-	paginator = Paginator(eveniment_querry_instances_req, 3) # Show 25 contacts per page.
+	paginator = Paginator(eveniment_querry_instances_req, 40) # Show 25 contacts per page.
 
 	page_number = request.GET.get('page')
 	eveniment_querry_instances = paginator.get_page(page_number)

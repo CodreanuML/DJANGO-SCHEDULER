@@ -1,8 +1,12 @@
 /* GENERAL SETTINGS */
 
 
+
+/* GENERAL SETTINGS */
+
+
 body{
-	background-color: #F0FFFF;
+	background-color: #F8F8FF;
 }
 
 
@@ -24,7 +28,7 @@ body{
 
 .navbar{
 	height: 50px;
-	background-color: black;
+	background-color: #417690;
 	display: flex;
 	align-items: center;
 	margin-left: 0.1vw;
@@ -48,70 +52,42 @@ body{
 /* LOGIN PAGE */
 .container_login{
 	display: flex;
-	flex-direction: row;
-	font-size: 16px;
-
-}
-
-
-.container_login .container_left{
-	
-	margin-left: 0.1vw;
-	height: 100vh;
-	width: 450px;
-	background-color: grey;
-	display: flex;
 	flex-direction: column;
-	
-
-
+	font-size: 16px;
+	justify-content: center;
+    align-items: center;
+    
 }
 
 
-.container_login .container_left .card_title{
-	margin-bottom: 20px;
-	height: 80px ;
+
+
+.container_login  .login_form{
+	margin-top: 80px;
+	width: 30%;
+	height: 160px;	
+
+	background-color: #F0FFFF;
+	border: solid;
+	border-color: #417690;
+	border-width: 0.1;
+
+}
+
+.row_title{
+	background-color: #417690;
 	width: 100%;
 	display: flex;
-	justify-content: center;
-	margin-top: 20px;
-	align-items: center;
+	justify-content:left;
 	
-
-}
-
-
-
-.container_login  .container_right{
-	width: 100%;
-	margin-top: 10px;
-	padding-left: 10px;
-
-}
-
-.container_login  .container_right .row_title{
-	width: 100%;
-	
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 20px;
+	color: white;
+	margin-bottom: 10px;
 }
 
 
 
 
-.login_form{
-	margin-top: 20px;
-	width: 100%;
-	margin-top: 10px;
-	padding-left: 10px; 
-	display: flex;
-	justify-content: center;
 
-
-
-}
 
 .form_row{
 	width: 100%;
@@ -122,42 +98,45 @@ body{
 
 }
 
-.form_col{
+.form_col_label{
 	width: 50%;
+	padding-left: 1%;
+	display: flex;
+	justify-content:left;
+	align-items: center;
+	
+}
+
+.form_col_value{
+	width: 50%;
+
 	display: flex;
 	justify-content:left;
 	align-items: center;
 }
 
-.row_footer{
-	margin-top: 30px;
-		display: flex;
-	align-items: center;
-	justify-content: center;
-}
 
-.container_right hr{
-	
-
-	width: 100%;
-
-	
-
+.form_col_value input{
+	width: 80%;
+	border-color:  #417690;
 
 }
 
 
-.login_form input{
-	
+.login_form hr{
+	width: 98%;
+	color:  #417690
 
-	width: 100%;
-
-	
 
 
 }
 
+.btn_form{
 
+	width: 20%;
+	height: 30px;
+	border-color: #417690;
+}
 
 
 
@@ -166,72 +145,49 @@ body{
 
 /* MAIN ITEMS */
 /* REGISTER PAGE */
+
+
+
+
+
 .container_register{
 	display: flex;
-	flex-direction: row;
-	font-size: 16px;
-
-}
-
-
-.container_register .container_left{
-	
-	margin-left: 0.1vw;
-	height: 100vh;
-	width: 450px;
-	background-color: grey;
-	display: flex;
 	flex-direction: column;
-	
-
-
+	font-size: 16px;
+	justify-content: center;
+    align-items: center;
+    
 }
 
 
-.container_register .container_left .card_title{
-	margin-bottom: 20px;
-	height: 80px ;
+
+
+.container_register  .register_form{
+	margin-top: 80px;
+	width: 30%;
+	height: 280px;	
+
+	background-color: #F0FFFF;
+	border: solid;
+	border-color: #417690;
+	border-width: 0.1;
+
+}
+
+.row_title{
+	background-color: #417690;
 	width: 100%;
 	display: flex;
-	justify-content: center;
-	margin-top: 20px;
-	align-items: center;
+	justify-content:left;
 	
-
-}
-
-
-
-.container_register  .container_right{
-	width: 100%;
-	margin-top: 10px;
-	padding-left: 10px;
-
-}
-
-.container_register  .container_right .row_title{
-	width: 100%;
-	
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 20px;
+	color: white;
+	margin-bottom: 10px;
 }
 
 
 
 
-.login_form{
-	margin-top: 20px;
-	width: 100%;
-	margin-top: 10px;
-	padding-left: 10px; 
-	display: flex;
-	justify-content: center;
 
-
-
-}
 
 .form_row{
 	width: 100%;
@@ -242,31 +198,45 @@ body{
 
 }
 
-.form_col{
+.form_col_label{
 	width: 50%;
+	padding-left: 1%;
+	display: flex;
+	justify-content:left;
+	align-items: center;
+	
+}
+
+.form_col_value{
+	width: 50%;
+
 	display: flex;
 	justify-content:left;
 	align-items: center;
 }
 
-.row_footer{
-	margin-top: 30px;
-		display: flex;
-	align-items: center;
-	justify-content: center;
-}
 
-
-
-
-
-
-
-
-
+.form_col_value input{
+	width: 80%;
+	border-color:  #417690;
 
 }
 
+
+.register_form hr{
+	width: 98%;
+	color:  #417690
+
+
+
+}
+
+.btn_form{
+
+	width: 20%;
+	height: 30px;
+	border-color: #417690;
+}
 
 
   

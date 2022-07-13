@@ -10,21 +10,16 @@
 <div class="container_register">
 
 
-	<div class="container_left">
-		<div class="card_title">UTILIZATOR NOU!</div>
-		<div class="card_eveniment"></div>
-
-	</div>
 
 
-	<div class="container_right">
 
-		<div class="row_title">
+
+		  <div class="register_form">
+
+
+		  	<div class="row_title">
 			INREGISTRARE
-		</div> 
-
-
-		  <div class="login_form">
+			</div> 
 
 
   				<form method="post" name="login">
@@ -33,11 +28,11 @@
                 {% for field in form %}
                 	<div class="form_row">
 
-                    <div class="form_col">
+                    <div class="form_col_label">
                     {{ field.label}}
                     </div>
                         
-                	<div class="form_col">
+                	<div class="form_col_value">
                 	{{ field}}
                 	</div>
                    
@@ -54,11 +49,10 @@
 
         <div class="row_footer">
 
-			<a href="https://www.w3schools.com/" > Logare</a>
+			<a href="https://www.w3schools.com/" > Esti deja Utilizator ? Autentifica-te!</a>
 		</div> 
 
-	
-	</div>
+
 
 
 

@@ -57,7 +57,7 @@ body{
 
 
 .container_left_home{
-	margin-top: 5px;
+	margin-top: 10px;
 	margin-left: 0.1vw;
 	height: 100vh;
 	width: 550px;
@@ -114,7 +114,7 @@ body{
 	width: 100%;
 	margin-top: 10px;
 	padding-left: 10px;
-	
+	padding-right: 0.1vw;
 }
 
 .row_title{
@@ -212,7 +212,7 @@ hr{
 
 
 .container_left_detalii{
-	margin-top: 5px;
+	margin-top: 10px;
 	margin-left: 0.1vw;
 	height: 100vh;
 	width: 550px;
@@ -279,7 +279,7 @@ hr{
 	width: 100%;
 	margin-top: 10px;
 	padding-left: 10px; 
-
+	padding-right: 0.1vw; 
 
 }
 
@@ -385,7 +385,7 @@ hr{
 
 .container_left_proiect_nou{
 	
-	margin-top: 5px;
+	margin-top: 10px;
 	margin-left: 0.1vw;
 	height: 100vh;
 	width: 550px;

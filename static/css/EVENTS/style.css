@@ -148,7 +148,7 @@ body{
 
 .container_left_detalii_eveniment{
 	
-	margin-top: 5px;
+	margin-top: 10px;
 	margin-left: 0.1vw;
 	height: 100vh;
 	width: 550px;
@@ -224,7 +224,7 @@ body{
 	width: 100%;
 	margin-top: 10px;
 	padding-left: 10px; 
-
+	padding-right: 0.1vw;
 
 
 }
