@@ -13,5 +13,5 @@ class Eveniment_Template_form(forms.ModelForm):
 
 	class Meta:
 		model=Eveniment_Template
-		fields=['nume','proiect','activitati_necesare','recurenenta','zile_executie','an_incepere','luna_incepere','zi_incepere','status']
-		label=['Nume Eveniment','Proiect','Activitati','Recurenta','Zile incheiere activitate','Anul inceperii activitatii','Luna inceperii activitatii','Ziua inceperii activitatii','Starea ordinului']
+		fields=['nume','proiect','responsabil','activitati_necesare','recurenenta','zile_executie','an_incepere','luna_incepere','zi_incepere','status']
+		label=['Nume Eveniment','Proiect','Responsabil','Activitati','Recurenta','Zile incheiere activitate','Anul inceperii activitatii','Luna inceperii activitatii','Ziua inceperii activitatii','Starea ordinului']

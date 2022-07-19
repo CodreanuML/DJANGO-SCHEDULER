@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from .models import Proiect
-from EVENTS.models import Eveniment_Template
+from EVENTS.models import Eveniment_Template,Eveniment
 from .forms import Proiect_ADD
 from django.core.paginator import Paginator
 from django.contrib.auth.models import User
@@ -24,7 +24,10 @@ def home(request):
    
 
 
-	return render(request,'PROJECTS/home.html',{'proiecte_querry':proiecte_querry,'employee':employee_req})
+	evenimente_q=Eveniment.objects.filter(responsabil=user_req,status=False)
+
+
+	return render(request,'PROJECTS/home.html',{'proiecte_querry':proiecte_querry,'employee':employee_req,'queue_tasks':evenimente_q})
 
 
 @login_required

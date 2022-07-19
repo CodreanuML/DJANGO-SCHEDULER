@@ -6,9 +6,7 @@
 
 
 
-
 <div class="container_home">
-
 
 <div class="container_left_home">
 
@@ -16,9 +14,31 @@
 	<hr/>
 	<div class="zona">Zona/Dep.: {{employee.Zona}} / {{employee.department}}</div>
 	<hr/>
-
+	<div class="zona">Saricini de efectuat :</div>
+	
+{% for task in queue_tasks %}
+<div class="task">
+<button type="button" class="collapsible">{{task}}</button>
+<div class="content">
+  <p>Proiect :</p>
+  <p>{{task.eveniment_template.proiect}}</p>
+  <hr/>	
+  <p>Actiune:</p>
+  <p>{{task.eveniment_template.activitati_necesare}}</p>
+  <hr/>
+  <p>Termen Finalizare:</p>
+  <p>{{task.data_finalizare}} </p>
+  <hr/>
+  <p>Finalizare Actiune:</p>
+ <button class="finalizeaza_buton"  ><a href="{% url 'EVENTS:finalizeaza_eveniment' task.pk %}">Finalizeaza</a></button>
+</div>
 </div>
 
+
+	
+{% endfor %}
+
+</div>
 
 
 
@@ -88,5 +108,29 @@
 </div>
 
 
+<script>
+
+/** SCRIPTUL PENTRU COLLAPSE BUTTON EVENIMENTE ACTIVE **/
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+</script>
+
+
+
 {% endblock %}
+
 

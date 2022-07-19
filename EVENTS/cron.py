@@ -47,16 +47,22 @@ def scan_template_generate_events():
         Eveniment_querry_last=Evenimente_querry[0]
 #Verificam daca recurenta a fost depasita si daca da instantiem o noua instanta
         
-
-        data_verificare=Eveniment_querry_last.data_initiere+timedelta(days=+Eveniment_Template_instance.recurenenta_zile)
+        if Eveniment_querry_last != None :
+          data_verificare=Eveniment_querry_last.data_initiere+timedelta(days=+Eveniment_Template_instance.recurenenta_zile)
 
 
     
 
-        if data_verificare == datetime.date.today():
+          if data_verificare == datetime.date.today():
+
+#Creaza o instanta noua utilizand data celei precedente
+            Eveniment.objects.create(responsabil=User_querry,eveniment_template=Eveniment_Template_instance,data_initiere=datetime.date.today(),data_finalizare=datetime.date.today()+timedelta(days=+Eveniment_Template_instance.zile_executie),status=False)
+        else :
+#Creaza o instanta noua daca nu exista
+          Eveniment.objects.create(responsabil=User_querry,eveniment_template=Eveniment_Template_instance,data_initiere=datetime.date.today(),data_finalizare=datetime.date.today()+timedelta(days=+Eveniment_Template_instance.zile_executie),status=False)
 
 
-          Eveniment.objects.create(responsabil=User_querry,eveniment_template=Eveniment_Template_instance,data_initiere=datetime.date.today(),data_finalizare=datetime.date.today(),status=False)
+
 
 
 

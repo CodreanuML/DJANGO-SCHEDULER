@@ -7,41 +7,50 @@
 <div class="container_sarcina_noua">
 
 
-<div class="container_left_sarcina_noua">
 
-    
-    <div class="nume">ADAUGA SARCINA NOUA</div>
 
-</div>
-
-<div class="container_right_sarcina_noua">
-
-            <div class="sarcina_form_1">
+            <div class="sarcina_form">
             
-                <form method="POST" name="new_sarcina">
+
+                <div class="title_form">
+                    Inregistrare Template Eveniment 
+                </div>      
+
+
+
+                <form method="post" name="new_event">
+
                 {% csrf_token %}
 
                 {% for field in form %}
                     <div class="form_row">
 
-                        <div class="form_col">
-                    {{ field.label}} :
+                        <div class="form_col_label">
+                        {% if field.label == 'Status' %}    
+                        {{ field.label}} - Bifati casuta daca vreti sa fie activ:
+                        {% else %}
+                        {{field.label}}
+                        {% endif %}
                         </div>
                         
-                        <div class="form_col">
-                    {{ field}}
-                        </div>
-
+                       <div class="form_col_value">
+                       {{ field}}
+                       </div>
+                   
                     </div> 
+
                     <hr/>
                 {% endfor %}
+
+
                 <div class="form_row">
+
                  <button type="submit" class="btn_form">Adauga</button>
                 </div>
                 </form>
+
             </div>
 
-</div>
 
 
 </div>

@@ -49,7 +49,7 @@ class Eveniment(models.Model):
 
 	
 	def __str__(self):
-		return str(self.eveniment_template.nume +" " +str(self.pk))
+		return str(self.eveniment_template.nume +" - Raport ID :" +str(self.pk))
 
 
 	class Meta :

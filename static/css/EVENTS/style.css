@@ -316,6 +316,103 @@ body{
 }
 
 
+/* SARCINA NOU  */
+
+
+
+
+
+.container_sarcina_noua{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+
+
+
+.sarcina_form{
+	margin-top: 60px;
+	width: 60%;
+	height: 590px;
+	margin-top: 10px;
+	background-color: #F0FFFF;
+	border: solid;
+	border-color: #417690;
+	border-width: 0.1;
+
+
+
+
+
+
+}
+
+
+.sarcina_form .title_form{
+	background-color: #417690;
+	width: 100%;
+	display: flex;
+	justify-content:left;
+	align-items: center;
+	color: white;
+	margin-bottom: 10px;
+}
+
+
+
+
+.sarcina_form .form_row{
+	width: 100%;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+
+
+
+}
+
+
+.sarcina_form .form_col_label{
+	width: 50%;
+	padding-left: 1%;
+	display: flex;
+	justify-content:left;
+	align-items: center;
+	
+}
+
+.sarcina_form .form_col_value{
+	width: 50%;
+
+	display: flex;
+	justify-content:left;
+	align-items: center;
+}
+
+
+.sarcina_form .form_col_value input{
+	width: 80%;
+	border-color:  #417690;
+
+}
+
+
+.sarcina_form  hr{
+	width: 98%;
+	border-color: #417690 ;
+
+
+
+
+}
+
+.btn_form{
+
+	width: 20%;
+	height: 30px;
+	border-color: #417690;
+}
 
 	
 
