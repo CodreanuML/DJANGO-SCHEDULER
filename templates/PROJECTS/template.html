@@ -7,7 +7,7 @@
 	<title></title>
 
 	<link href="{% static 'css/PROJECTS/style.css' %}" rel="stylesheet" type="text/css"> 
-
+	<script src="{% static 'js/PROJECTS/scripts.js' %}"></script> 
 	
 
 </head>
@@ -15,8 +15,15 @@
 
 
 	<div class="navbar">
+		<div class="navbar_left">
 			<a class="navbutton" href="{% url 'PROJECTS:projects_home' %}">SchedullingApp</a>
-			
+		</div>
+		<div class="navbar_right">
+			  	<div class="dropdown">
+  					<a class="navbutton" href="{% url 'ACCOUNTS:logout' %}">Delogare</a>
+ 
+  				</div> 
+		</div>
 	</div>
 
 

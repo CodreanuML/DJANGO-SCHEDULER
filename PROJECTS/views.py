@@ -56,3 +56,5 @@ def project_details(request,pk):
 
 
 	return render(request,'PROJECTS/proiect_detalii.html',{'proiect':proiect_querry,'eveniment_template':eveniment_template_querry})
+
+

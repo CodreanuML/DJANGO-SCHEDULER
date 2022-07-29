@@ -10,11 +10,10 @@ from datetime import timedelta
 
 
 #GENEREAZA EVENIMENTE AUTOMAT EVENIMENTE
-
 def scan_template_generate_events():
 
 
-  
+             
 
 #Selectam Toate Templateurile
 
@@ -53,13 +52,13 @@ def scan_template_generate_events():
 
     
 
-          if data_verificare == datetime.date.today():
+        if data_verificare == datetime.date.today():
 
 #Creaza o instanta noua utilizand data celei precedente
-            Eveniment.objects.create(responsabil=User_querry,eveniment_template=Eveniment_Template_instance,data_initiere=datetime.date.today(),data_finalizare=datetime.date.today()+timedelta(days=+Eveniment_Template_instance.zile_executie),status=False)
-        else :
-#Creaza o instanta noua daca nu exista
           Eveniment.objects.create(responsabil=User_querry,eveniment_template=Eveniment_Template_instance,data_initiere=datetime.date.today(),data_finalizare=datetime.date.today()+timedelta(days=+Eveniment_Template_instance.zile_executie),status=False)
+      else :
+#Creaza o instanta noua daca nu exista
+        Eveniment.objects.create(responsabil=User_querry,eveniment_template=Eveniment_Template_instance,data_initiere=datetime.date.today(),data_finalizare=datetime.date.today()+timedelta(days=+Eveniment_Template_instance.zile_executie),status=False)
 
 
 
